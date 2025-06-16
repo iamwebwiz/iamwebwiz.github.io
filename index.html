@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezekiel Oladejo - Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .mobile-menu {
+            display: none;
+        }
+        .desktop-menu {
+            display: flex;
+        }
+        @media (max-width: 640px) {
+            .mobile-menu {
+                display: block;
+            }
+            .desktop-menu {
+                display: none !important;
+            }
+        }
+        .menu-icon {
+            transition: transform 0.2s ease;
+        }
+        .menu-icon.active {
+            transform: rotate(90deg);
+        }
+        .mobile-menu-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        .mobile-menu-content.active {
+            max-height: 300px;
+            transition: max-height 0.2s ease-in;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-sm z-50 border-b border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <a href="#" class="text-xl font-bold hover:text-gray-600 transition-colors">EO</a>
+
+                <!-- Desktop Menu -->
+                <div class="desktop-menu flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+                    <a href="#experience" class="text-gray-600 hover:text-gray-900">Experience</a>
+                    <a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="mobile-menu text-gray-600 hover:text-gray-900 focus:outline-none">
+                    <i class="fas fa-bars menu-icon text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="mobile-menu mobile-menu-content">
+                <div class="flex flex-col space-y-4 pb-4">
+                    <a href="#about" class="text-gray-600 hover:text-gray-900">About</a>
+                    <a href="#experience" class="text-gray-600 hover:text-gray-900">Experience</a>
+                    <a href="#projects" class="text-gray-600 hover:text-gray-900">Projects</a>
+                    <a href="#contact" class="text-gray-600 hover:text-gray-900">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-5xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-6">Hi, I'm Ezekiel Oladejo</h1>
+            <p class="text-xl text-gray-600 mb-8">Senior Software Engineer with over 8 years of experience in building robust, scalable solutions.</p>
+            <div class="flex space-x-4">
+                <a href="mailto:ezekielabiodunoladejo@gmail.com" target="_blank" class="text-gray-600 hover:text-gray-900">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+                <a href="https://linkedin.com/in/ezekiel-oladejo" target="_blank" class="text-gray-600 hover:text-gray-900">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="https://github.com/iamwebwiz" target="_blank" class="text-gray-600 hover:text-gray-900">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8">About Me</h2>
+            <p class="text-lg text-gray-600 mb-6">
+                Experienced Software Engineer with 8+ years of experience building robust, scalable solutions across diverse industries using modern web technologies. Skilled in designing, testing, and maintaining high-quality software systems, and leading high-performing engineering teams in fast-paced environments.
+            </p>
+
+            <!-- Skills Section -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold mb-6">Skills</h3>
+
+                <!-- Backend Skills -->
+                <div class="mb-8">
+                    <h4 class="text-lg font-semibold mb-4">Backend Development</h4>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fab fa-laravel text-red-500 text-xl"></i>
+                            <span>Laravel</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fab fa-node-js text-green-500 text-xl"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fas fa-server text-blue-500 text-xl"></i>
+                            <span>Express</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fas fa-code text-purple-500 text-xl"></i>
+                            <span>AdonisJS</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fas fa-code text-blue-600 text-xl"></i>
+                            <span>NestJS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Skills -->
+                <div class="mb-8">
+                    <h4 class="text-lg font-semibold mb-4">Frontend Development</h4>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fab fa-react text-blue-400 text-xl"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fab fa-vuejs text-green-500 text-xl"></i>
+                            <span>Vue</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fab fa-js text-yellow-400 text-xl"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fas fa-code text-blue-500 text-xl"></i>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps Skills -->
+                <div class="mb-8">
+                    <h4 class="text-lg font-semibold mb-4">DevOps & Cloud</h4>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fab fa-aws text-orange-500 text-xl"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fas fa-cloud text-blue-500 text-xl"></i>
+                            <span>DigitalOcean</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fab fa-docker text-blue-600 text-xl"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fas fa-code-branch text-purple-500 text-xl"></i>
+                            <span>CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database Skills -->
+                <div class="mb-8">
+                    <h4 class="text-lg font-semibold mb-4">Databases</h4>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fas fa-database text-blue-500 text-xl"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fas fa-database text-blue-600 text-xl"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fas fa-database text-green-500 text-xl"></i>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Skills -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Other Skills</h4>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fab fa-git-alt text-orange-500 text-xl"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fas fa-code-branch text-purple-500 text-xl"></i>
+                            <span>GitHub Actions</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fas fa-vial text-green-500 text-xl"></i>
+                            <span>TDD</span>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg flex items-center space-x-3">
+                            <i class="fas fa-users text-blue-500 text-xl"></i>
+                            <span>Team Leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="max-w-5xl mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold">Experience</h2>
+                <a href="https://docs.google.com/document/d/1b9ctNxYruX5adIczDk5epVtpepuRqyCoiSgiqjyO-LI/edit?usp=sharing"
+                   target="_blank"
+                   class="inline-flex items-center px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors">
+                    <i class="fas fa-file-alt mr-2"></i>
+                    View Full Resume
+                </a>
+            </div>
+            <div class="space-y-12">
+                <div class="border-l-2 border-gray-200 pl-6">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">Senior Backend Engineer</h3>
+                            <p class="text-gray-600">Yassir - Palo Alto, California, USA</p>
+                        </div>
+                        <span class="text-gray-500 mt-2 sm:mt-0">Oct 2024 - Present</span>
+                    </div>
+                    <ul class="list-disc list-inside mt-4 text-gray-600 space-y-2">
+                        <li>Built an internal logging system to complement Bunyan, improving debugging reliability by 80%</li>
+                        <li>Designed and implemented the "Trip Radar" feature, boosting ride completion rates by 10%</li>
+                        <li>Developed backend systems for "Back to Back" dispatch feature, increasing driver utilization by 15%</li>
+                    </ul>
+                </div>
+
+                <div class="border-l-2 border-gray-200 pl-6">
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start">
+                        <div>
+                            <h3 class="text-xl font-bold">Engineering Lead</h3>
+                            <p class="text-gray-600">Yahshud - Lagos, Nigeria</p>
+                        </div>
+                        <span class="text-gray-500 mt-2 sm:mt-0">Mar 2024 - Sep 2024</span>
+                    </div>
+                    <ul class="list-disc list-inside mt-4 text-gray-600 space-y-2">
+                        <li>Led a team of 7 engineers, 2 designers, and 1 Product Manager</li>
+                        <li>Provisioned highly available cloud infrastructure with 99.99% uptime</li>
+                        <li>Reduced monthly server costs by over 50%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">Shoptoph</h3>
+                    <p class="text-gray-600 mb-4">An e-commerce platform for local Nigerian fashion pieces.</p>
+                    <a href="https://shoptoph.com" class="text-blue-600 hover:underline">Visit Project →</a>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-2">RAIN Investor</h3>
+                    <p class="text-gray-600 mb-4">A Shariah-compliant real estate investment platform.</p>
+                    <a href="https://raininvestor.com" class="text-blue-600 hover:underline">Visit Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+            <p class="text-lg text-gray-600 mb-8">
+                I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+            </p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:ezekielabiodunoladejo@gmail.com" class="text-gray-600 hover:text-gray-900">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+                <a href="https://linkedin.com/in/ezekiel-oladejo" class="text-gray-600 hover:text-gray-900">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="https://github.com/iamwebwiz" class="text-gray-600 hover:text-gray-900">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-5xl mx-auto px-4 text-center text-gray-600">
+            <p>© 2024 Ezekiel Oladejo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Update JavaScript for mobile menu -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        const menuIcon = mobileMenuButton.querySelector('.menu-icon');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            menuIcon.classList.toggle('active');
+
+            // Toggle between hamburger and close icons
+            if (menuIcon.classList.contains('active')) {
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-times');
+            } else {
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu when a link is clicked
+        Array.from(mobileMenuLinks).forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                menuIcon.classList.remove('active');
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (event) => {
+            if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+                mobileMenu.classList.remove('active');
+                menuIcon.classList.remove('active');
+                menuIcon.classList.remove('fa-times');
+                menuIcon.classList.add('fa-bars');
+            }
+        });
+    </script>
+</body>
+</html>
