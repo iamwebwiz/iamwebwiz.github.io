@@ -63,6 +63,68 @@
             background-image: radial-gradient(circle at 1px 1px, #babec3 1px, transparent 0);
             background-size: 1.5rem 1.5rem;
         }
+        .multicolor-dots-bg {
+            background-image:
+                radial-gradient(circle at 30px 40px, #fbbf24 2px, transparent 0), /* yellow */
+                radial-gradient(circle at 180px 90px, #60a5fa 2px, transparent 0), /* blue */
+                radial-gradient(circle at 320px 60px, #34d399 2px, transparent 0), /* green */
+                radial-gradient(circle at 100px 200px, #f472b6 2px, transparent 0), /* pink */
+                radial-gradient(circle at 400px 180px, #a78bfa 2px, transparent 0), /* purple */
+                radial-gradient(circle at 220px 30px, #fbbf24 2px, transparent 0), /* yellow 2 */
+                radial-gradient(circle at 80px 160px, #60a5fa 2px, transparent 0), /* blue 2 */
+                radial-gradient(circle at 350px 200px, #34d399 2px, transparent 0), /* green 2 */
+                radial-gradient(circle at 200px 120px, #f472b6 2px, transparent 0), /* pink 2 */
+                radial-gradient(circle at 450px 60px, #a78bfa 2px, transparent 0), /* purple 2 */
+                radial-gradient(circle at 370px 120px, #fbbf24 2px, transparent 0), /* yellow 3 */
+                radial-gradient(circle at 60px 60px, #60a5fa 2px, transparent 0), /* blue 3 */
+                radial-gradient(circle at 300px 220px, #f472b6 2px, transparent 0), /* pink 3 */
+                radial-gradient(circle at 120px 40px, #34d399 2px, transparent 0), /* green 3 */
+                radial-gradient(circle at 480px 200px, #a78bfa 2px, transparent 0), /* purple 3 */
+                radial-gradient(circle at 250px 180px, #fbbf24 2px, transparent 0); /* yellow 4 */
+            background-size: 500px 250px;
+        }
+        .testimonial-gradient-border {
+            position: relative;
+        }
+        .testimonial-gradient-border::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 5px;
+            border-bottom-left-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+            background: linear-gradient(90deg, #fbbf24, #60a5fa, #34d399, #f472b6, #a78bfa, #fbbf24, #60a5fa, #34d399, #f472b6, #a78bfa, #fbbf24);
+            background-size: 400% 100%;
+            animation: gradient-move 6s linear infinite;
+        }
+        @keyframes gradient-move {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+        .shining-star {
+            position: absolute;
+            font-size: 1.1rem;
+            color: #ffe066;
+            opacity: 0;
+            pointer-events: none;
+            filter: drop-shadow(0 0 12px #ffe066) drop-shadow(0 0 24px #fff700cc);
+            animation: star-glow 2.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+            transition: left 0.7s cubic-bezier(0.77, 0, 0.175, 1), top 0.7s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        @keyframes star-glow {
+            0%, 100% { opacity: 0; transform: scale(0.2); }
+            10% { opacity: 0.7; transform: scale(0.7); }
+            20% { opacity: 1; transform: scale(1.1); }
+            40% { opacity: 1; transform: scale(1.2); }
+            60% { opacity: 0.7; transform: scale(0.7); }
+            80% { opacity: 0; transform: scale(0.2); }
+        }
     </style>
     <script>
         tailwind.config = {
@@ -366,12 +428,12 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-20 bg-white border-b border-gray-200">
+    <section id="testimonials" class="py-20 bg-white multicolor-dots-bg">
         <div class="max-w-5xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">What People Are Saying</h2>
             <div class="grid md:grid-cols-2 gap-8">
                 <!-- Testimonial 1 -->
-                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 text-center">
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 text-center testimonial-gradient-border">
                     <img src="images/Josiah.jpeg" alt="Josiah" class="w-16 h-16 rounded-full mx-auto mb-4 object-cover">
                     <div class="mb-4">
                         <p class="font-bold">Josiah Yahaya</p>
@@ -386,10 +448,11 @@
                         </blockquote>
                         <i class="fas fa-quote-right absolute bottom-0 -right-6 text-gray-200 text-4xl"></i>
                     </div>
+                    <span class="shining-star" id="star1">★</span>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 text-center">
+                <div class="bg-white p-8 rounded-lg shadow-md border border-gray-200 text-center testimonial-gradient-border">
                     <img src="images/Israel.jpeg" alt="Israel" class="w-16 h-16 rounded-full mx-auto mb-4 object-cover">
                     <div class="mb-4">
                         <p class="font-bold">Israel Adura</p>
@@ -405,6 +468,7 @@
                         </blockquote>
                         <i class="fas fa-quote-right absolute bottom-0 -right-6 text-gray-200 text-4xl"></i>
                     </div>
+                    <span class="shining-star" id="star2">★</span>
                 </div>
             </div>
         </div>
@@ -517,6 +581,28 @@
                 menuIcon.classList.add('fa-bars');
             }
         });
+
+        // Shining star random movement for testimonials
+        function moveStarRandomly(starId, cardSelector) {
+            const card = document.querySelector(cardSelector);
+            const star = document.getElementById(starId);
+            if (!card || !star) return;
+            const cardRect = card.getBoundingClientRect();
+            const cardWidth = card.offsetWidth;
+            const cardHeight = card.offsetHeight;
+            // Padding to keep star inside
+            const pad = 32;
+            function randomPos() {
+                const x = Math.random() * (cardWidth - pad * 2) + pad;
+                const y = Math.random() * (cardHeight - pad * 2) + pad;
+                star.style.left = x + 'px';
+                star.style.top = y + 'px';
+            }
+            randomPos();
+            setInterval(randomPos, 1800 + Math.random() * 1200);
+        }
+        moveStarRandomly('star1', '.testimonial-gradient-border:nth-of-type(1)');
+        moveStarRandomly('star2', '.testimonial-gradient-border:nth-of-type(2)');
     </script>
 </body>
 </html>
