@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://iamwebwiz.github.io/sitemap.xml
+Sitemap: https://iamwebwiz.github.io/sitemap.txt
