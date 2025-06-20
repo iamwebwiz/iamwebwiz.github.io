@@ -86,18 +86,26 @@
         .testimonial-gradient-border {
             position: relative;
         }
+        .testimonial-gradient-border::before,
         .testimonial-gradient-border::after {
             content: '';
             position: absolute;
             left: 0;
             right: 0;
-            bottom: 0;
             height: 5px;
-            border-bottom-left-radius: 0.5rem;
-            border-bottom-right-radius: 0.5rem;
             background: linear-gradient(90deg, #fbbf24, #60a5fa, #34d399, #f472b6, #a78bfa, #fbbf24, #60a5fa, #34d399, #f472b6, #a78bfa, #fbbf24);
             background-size: 400% 100%;
             animation: gradient-move 6s linear infinite;
+        }
+        .testimonial-gradient-border::before {
+            top: 0;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+        }
+        .testimonial-gradient-border::after {
+            bottom: 0;
+            border-bottom-left-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
         }
         @keyframes gradient-move {
             0% {
@@ -106,24 +114,6 @@
             100% {
                 background-position: 100% 50%;
             }
-        }
-        .shining-star {
-            position: absolute;
-            font-size: 1.1rem;
-            color: #ffe066;
-            opacity: 0;
-            pointer-events: none;
-            filter: drop-shadow(0 0 12px #ffe066) drop-shadow(0 0 24px #fff700cc);
-            animation: star-glow 2.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
-            transition: left 0.7s cubic-bezier(0.77, 0, 0.175, 1), top 0.7s cubic-bezier(0.77, 0, 0.175, 1);
-        }
-        @keyframes star-glow {
-            0%, 100% { opacity: 0; transform: scale(0.2); }
-            10% { opacity: 0.7; transform: scale(0.7); }
-            20% { opacity: 1; transform: scale(1.1); }
-            40% { opacity: 1; transform: scale(1.2); }
-            60% { opacity: 0.7; transform: scale(0.7); }
-            80% { opacity: 0; transform: scale(0.2); }
         }
     </style>
     <script>
@@ -448,7 +438,6 @@
                         </blockquote>
                         <i class="fas fa-quote-right absolute bottom-0 -right-6 text-gray-200 text-4xl"></i>
                     </div>
-                    <span class="shining-star" id="star1">★</span>
                 </div>
 
                 <!-- Testimonial 2 -->
@@ -468,7 +457,6 @@
                         </blockquote>
                         <i class="fas fa-quote-right absolute bottom-0 -right-6 text-gray-200 text-4xl"></i>
                     </div>
-                    <span class="shining-star" id="star2">★</span>
                 </div>
             </div>
         </div>
@@ -581,28 +569,6 @@
                 menuIcon.classList.add('fa-bars');
             }
         });
-
-        // Shining star random movement for testimonials
-        function moveStarRandomly(starId, cardSelector) {
-            const card = document.querySelector(cardSelector);
-            const star = document.getElementById(starId);
-            if (!card || !star) return;
-            const cardRect = card.getBoundingClientRect();
-            const cardWidth = card.offsetWidth;
-            const cardHeight = card.offsetHeight;
-            // Padding to keep star inside
-            const pad = 32;
-            function randomPos() {
-                const x = Math.random() * (cardWidth - pad * 2) + pad;
-                const y = Math.random() * (cardHeight - pad * 2) + pad;
-                star.style.left = x + 'px';
-                star.style.top = y + 'px';
-            }
-            randomPos();
-            setInterval(randomPos, 1800 + Math.random() * 1200);
-        }
-        moveStarRandomly('star1', '.testimonial-gradient-border:nth-of-type(1)');
-        moveStarRandomly('star2', '.testimonial-gradient-border:nth-of-type(2)');
     </script>
 </body>
 </html>
