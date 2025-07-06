@@ -8,11 +8,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat Alternates', 'Geist', 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-family: 'Montserrat Alternates', 'Inter', 'Segoe UI', Arial, sans-serif;
 }
 
 body {
-  font-family: 'Geist', 'Inter', 'Segoe UI', Arial, sans-serif;
+  font-family: 'Space Grotesk', 'Inter', 'Segoe UI', Arial, sans-serif;
 }
 
 .mobile-menu {
@@ -124,4 +124,33 @@ body {
   100% {
     background-position: 100% 50%;
   }
+}
+
+.testimonials-scroll-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.testimonials-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.testimonials-scroll-wrapper {
+  display: flex;
+  gap: 2rem;
+}
+
+.testimonial-card {
+  min-width: 350px;
+  max-width: 400px;
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e5e7eb;
+  padding: 2rem;
+  margin: 0 auto;
 }
