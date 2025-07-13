@@ -36,3 +36,22 @@ document.addEventListener('click', (event) => {
     menuIcon.classList.add('fa-bars');
   }
 });
+
+// Initialize Swiper for testimonials
+const testimonialsSwiper = new Swiper('.testimonials-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: '#testimonial-next',
+    prevEl: '#testimonial-prev',
+  },
+  breakpoints: {
+    768: {
+      spaceBetween: 30,
+    },
+    1024: {
+      spaceBetween: 50,
+    },
+  },
+});
