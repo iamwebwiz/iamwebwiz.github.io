@@ -46,6 +46,11 @@ const testimonialsSwiper = new Swiper('.testimonials-swiper', {
     nextEl: '#testimonial-next',
     prevEl: '#testimonial-prev',
   },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
   breakpoints: {
     768: {
       spaceBetween: 30,
