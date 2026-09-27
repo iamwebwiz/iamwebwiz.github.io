@@ -1,0 +1,667 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-27T03:28:04+00:00",
+  "title": "Design System: Ezekiel Oladejo",
+  "extensions": {
+    "colorMeta": {
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Night Canvas",
+        "canonical": "#0b0d0e",
+        "cssVar": "--color-canvas",
+        "lightTheme": "#f2f4f3",
+        "tonalRamp": [
+          "#0a0b0c",
+          "#232527",
+          "#404244",
+          "#5f6263",
+          "#808384",
+          "#a3a5a7",
+          "#c7cacb",
+          "#eceff0"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Instrument Panel",
+        "canonical": "#121517",
+        "cssVar": "--color-panel",
+        "lightTheme": "#ffffff",
+        "tonalRamp": [
+          "#090c0d",
+          "#222628",
+          "#3f4345",
+          "#5e6264",
+          "#7f8386",
+          "#a1a6a8",
+          "#c5cacd",
+          "#ebeff2"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "Matte Card",
+        "canonical": "#15191b",
+        "cssVar": "--color-card",
+        "lightTheme": "#ffffff",
+        "tonalRamp": [
+          "#080c0e",
+          "#222628",
+          "#3e4345",
+          "#5d6265",
+          "#7e8386",
+          "#a1a6a9",
+          "#c5cacd",
+          "#eaeff2"
+        ]
+      },
+      "raised": {
+        "role": "neutral",
+        "displayName": "Raised Matte",
+        "canonical": "#1b2023",
+        "cssVar": "--color-raised",
+        "lightTheme": "#eef1f0",
+        "tonalRamp": [
+          "#080c0f",
+          "#212629",
+          "#3d4346",
+          "#5c6266",
+          "#7d8387",
+          "#a0a6aa",
+          "#c4cace",
+          "#e9f0f4"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Hairline Rule",
+        "canonical": "#2a2f33",
+        "cssVar": "--color-rule",
+        "lightTheme": "#dde2e0",
+        "tonalRamp": [
+          "#080c0f",
+          "#21262a",
+          "#3d4347",
+          "#5c6267",
+          "#7d8388",
+          "#a0a6ab",
+          "#c4cacf",
+          "#e9eff5"
+        ]
+      },
+      "rule-strong": {
+        "role": "neutral",
+        "displayName": "Strong Rule",
+        "canonical": "#3a4146",
+        "cssVar": "--color-rule-strong",
+        "lightTheme": "#c3cbc8",
+        "tonalRamp": [
+          "#070c10",
+          "#20262b",
+          "#3c4348",
+          "#5b6268",
+          "#7c8489",
+          "#9ea6ac",
+          "#c2cad1",
+          "#e7f0f6"
+        ]
+      },
+      "fg": {
+        "role": "neutral",
+        "displayName": "Moonlit Off-White",
+        "canonical": "#f2f2ee",
+        "cssVar": "--color-fg",
+        "lightTheme": "#0f1416",
+        "tonalRamp": [
+          "#0b0b09",
+          "#252522",
+          "#42423f",
+          "#61615e",
+          "#82827f",
+          "#a5a5a1",
+          "#c9c9c5",
+          "#efefeb"
+        ]
+      },
+      "body": {
+        "role": "neutral",
+        "displayName": "Instrument Grey",
+        "canonical": "#b9c0c4",
+        "cssVar": "--color-body",
+        "lightTheme": "#3f4a4f",
+        "tonalRamp": [
+          "#070c0f",
+          "#212629",
+          "#3d4346",
+          "#5c6266",
+          "#7d8387",
+          "#9fa6aa",
+          "#c3cace",
+          "#e8f0f4"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Dim Grey",
+        "canonical": "#8b9398",
+        "cssVar": "--color-muted",
+        "lightTheme": "#5d686e",
+        "tonalRamp": [
+          "#070c0f",
+          "#20262a",
+          "#3c4347",
+          "#5b6267",
+          "#7c8489",
+          "#9ea6ab",
+          "#c2cbd0",
+          "#e7f0f5"
+        ]
+      },
+      "chip-fg": {
+        "role": "neutral",
+        "displayName": "Chip Grey",
+        "canonical": "#d6dbde",
+        "cssVar": "--color-chip-fg",
+        "lightTheme": "#2b3438",
+        "tonalRamp": [
+          "#080c0e",
+          "#222628",
+          "#3f4345",
+          "#5e6264",
+          "#7e8386",
+          "#a1a6a9",
+          "#c5cacd",
+          "#eaeff2"
+        ]
+      },
+      "signal": {
+        "role": "primary",
+        "displayName": "Runway Green",
+        "canonical": "#39e07a",
+        "cssVar": "--color-signal",
+        "lightTheme": "#13803f",
+        "tonalRamp": [
+          "#001004",
+          "#002e12",
+          "#015025",
+          "#057539",
+          "#0b9c4e",
+          "#1dc465",
+          "#4aec85",
+          "#c7ffd3"
+        ]
+      },
+      "signal-hover": {
+        "role": "primary",
+        "displayName": "Runway Green, Lit",
+        "canonical": "#5ef08f",
+        "cssVar": "--color-signal-hover",
+        "lightTheme": "#0f6b34",
+        "tonalRamp": [
+          "#001004",
+          "#012e12",
+          "#025025",
+          "#087539",
+          "#0f9c4e",
+          "#20c466",
+          "#57ea8a",
+          "#c7ffd4"
+        ]
+      },
+      "signal-soft": {
+        "role": "primary",
+        "displayName": "Soft Runway Green",
+        "canonical": "#8ff0b4",
+        "cssVar": "--color-signal-soft",
+        "lightTheme": "#11753a",
+        "tonalRamp": [
+          "#000f05",
+          "#002e17",
+          "#01502c",
+          "#057443",
+          "#339861",
+          "#5bbc83",
+          "#81e1a6",
+          "#c4ffd8"
+        ]
+      },
+      "signal-tint": {
+        "role": "primary",
+        "displayName": "Green Glow",
+        "canonical": "rgb(57 224 122 / 0.14)",
+        "cssVar": "--color-signal-tint",
+        "lightTheme": "rgb(19 128 63 / 0.1)",
+        "tonalRamp": [
+          "#001004",
+          "#002e12",
+          "#015025",
+          "#057539",
+          "#0b9c4e",
+          "#1dc465",
+          "#4aec85",
+          "#c7ffd3"
+        ]
+      },
+      "amber": {
+        "role": "secondary",
+        "displayName": "Cabin Amber",
+        "canonical": "#f2a33a",
+        "cssVar": "--color-amber",
+        "lightTheme": "#b86e00",
+        "tonalRamp": [
+          "#140800",
+          "#361f01",
+          "#5d3904",
+          "#86550a",
+          "#b27213",
+          "#df9221",
+          "#feba68",
+          "#ffebd6"
+        ]
+      },
+      "amber-soft": {
+        "role": "secondary",
+        "displayName": "Soft Cabin Amber",
+        "canonical": "#f7c27a",
+        "cssVar": "--color-amber-soft",
+        "lightTheme": "#8a5200",
+        "tonalRamp": [
+          "#130900",
+          "#352000",
+          "#5b3a01",
+          "#835704",
+          "#a9772d",
+          "#cd9a53",
+          "#f3bf77",
+          "#ffebd3"
+        ]
+      },
+      "amber-tint": {
+        "role": "secondary",
+        "displayName": "Amber Glow",
+        "canonical": "rgb(242 163 58 / 0.16)",
+        "cssVar": "--color-amber-tint",
+        "lightTheme": "rgb(184 110 0 / 0.12)",
+        "tonalRamp": [
+          "#140800",
+          "#361f01",
+          "#5d3904",
+          "#86550a",
+          "#b27213",
+          "#df9221",
+          "#feba68",
+          "#ffebd6"
+        ]
+      }
+    },
+    "themes": {
+      "default": "dark",
+      "attribute": "data-theme",
+      "storageKey": "theme",
+      "dark": {
+        "name": "Night Flight",
+        "selector": ":root",
+        "colorScheme": "dark",
+        "themeColor": "#0b0d0e",
+        "colors": {
+          "canvas": "#0b0d0e",
+          "panel": "#121517",
+          "card": "#15191b",
+          "raised": "#1b2023",
+          "rule": "#2a2f33",
+          "rule-strong": "#3a4146",
+          "fg": "#f2f2ee",
+          "body": "#b9c0c4",
+          "muted": "#8b9398",
+          "chip-fg": "#d6dbde",
+          "signal": "#39e07a",
+          "signal-hover": "#5ef08f",
+          "signal-soft": "#8ff0b4",
+          "signal-tint": "rgb(57 224 122 / 0.14)",
+          "amber": "#f2a33a",
+          "amber-soft": "#f7c27a",
+          "amber-tint": "rgb(242 163 58 / 0.16)"
+        },
+        "extra": {
+          "ring": "rgb(57 224 122 / 0.18)",
+          "ring-fill": "rgb(57 224 122 / 0.03)",
+          "selection": "rgb(57 224 122 / 0.3)"
+        }
+      },
+      "light": {
+        "name": "Day Flight",
+        "selector": ":root[data-theme='light']",
+        "colorScheme": "light",
+        "themeColor": "#f2f4f3",
+        "colors": {
+          "canvas": "#f2f4f3",
+          "panel": "#ffffff",
+          "card": "#ffffff",
+          "raised": "#eef1f0",
+          "rule": "#dde2e0",
+          "rule-strong": "#c3cbc8",
+          "fg": "#0f1416",
+          "body": "#3f4a4f",
+          "muted": "#5d686e",
+          "chip-fg": "#2b3438",
+          "signal": "#13803f",
+          "signal-hover": "#0f6b34",
+          "signal-soft": "#11753a",
+          "signal-tint": "rgb(19 128 63 / 0.1)",
+          "amber": "#b86e00",
+          "amber-soft": "#8a5200",
+          "amber-tint": "rgb(184 110 0 / 0.12)"
+        },
+        "extra": {
+          "ring": "rgb(19 128 63 / 0.16)",
+          "ring-fill": "rgb(19 128 63 / 0.03)",
+          "selection": "rgb(19 128 63 / 0.18)"
+        }
+      },
+      "behavior": "The choice persists in localStorage; an inline head script applies it before first paint and sets the theme-color meta; the switch in the profile panel toggles data-theme and updates theme-color. Dark is the default when nothing is stored or storage is unavailable."
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name only, two lines; 3rem mobile, 3.75rem sm, 3rem lg, 4rem xl."
+      },
+      "display-compact": {
+        "displayName": "Display, compact",
+        "purpose": "The name at 3.25rem on desktop screens 820px tall or less."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "Outcome figures, proportional numerals, coloured per figure."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings, led by a 1.5rem green rule marker."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Role titles, project names, Stack subheading, testimonial authors."
+      },
+      "tagline": {
+        "displayName": "Tagline",
+        "purpose": "The green one-line claim under the name."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, capped at 65ch; pitch capped at 44ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Section index items only, uppercase."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Company lines, roles, chips, date chips (tabular)."
+      },
+      "tag": {
+        "displayName": "Tag",
+        "purpose": "Work-card type tags only; 0.75rem, 700, 0.02em tracking."
+      }
+    },
+    "shadows": [
+      {
+        "name": "edge-ring",
+        "value": "0 0 0 1px var(--color-rule)",
+        "purpose": "Every card and the profile panel at rest."
+      },
+      {
+        "name": "card-hover",
+        "value": "0 0 0 1px var(--color-rule-strong), 0 18px 40px rgb(0 0 0 / 0.45)",
+        "lightValue": "0 0 0 1px var(--color-rule-strong), 0 18px 40px rgb(15 20 22 / 0.12)",
+        "purpose": "Linked work cards on hover."
+      },
+      {
+        "name": "headshot-halo",
+        "value": "0 0 0 2px var(--color-panel), 0 0 0 4px var(--color-signal)",
+        "purpose": "Headshot ring only."
+      },
+      {
+        "name": "gauge-ring",
+        "value": "border: 1px solid var(--color-ring); box-shadow: 0 0 0 2.5rem var(--color-ring-fill), inset 0 0 0 2.5rem var(--color-ring-fill)",
+        "purpose": "The only ornament: profile panel, testimonial cards, contact card."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "All state transitions."
+      },
+      {
+        "name": "duration-fast",
+        "value": "150ms",
+        "purpose": "Colour changes on links, buttons, round controls, index labels."
+      },
+      {
+        "name": "duration-base",
+        "value": "250ms",
+        "purpose": "Section index rule extension, card hover shadow."
+      },
+      {
+        "name": "duration-pan",
+        "value": "2400ms",
+        "purpose": "Work-card screenshot pan on hover (hover-capable, no reduced motion)."
+      },
+      {
+        "name": "carousel-autoplay",
+        "value": "6000ms",
+        "purpose": "Testimonial autoplay; pauses on hover and keyboard focus; off under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px",
+        "purpose": "Two columns, sticky profile panel, section index shown."
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      },
+      {
+        "name": "height-tight",
+        "value": "(min-width: 1024px) and (max-height: 940px)",
+        "purpose": "Panel spacing tightens."
+      },
+      {
+        "name": "height-tighter",
+        "value": "(min-width: 1024px) and (max-height: 820px)",
+        "purpose": "Panel padding 32px, name 3.25rem, tagline 1.25rem."
+      },
+      {
+        "name": "pitch-hidden",
+        "value": "(min-width: 1024px) and (max-width: 1151px), (min-width: 1152px) and (max-width: 1279px) and (max-height: 940px), (min-width: 1280px) and (max-width: 1365px) and (max-height: 779px)",
+        "purpose": "The pitch is dropped where it cannot fit."
+      },
+      {
+        "name": "unstick",
+        "value": "(min-width: 1024px) and (max-height: 680px), (min-width: 1024px) and (max-width: 1279px) and (max-height: 720px)",
+        "purpose": "Profile panel stops being sticky."
+      },
+      {
+        "name": "container-wide",
+        "value": "@container (min-width: 36rem)",
+        "purpose": "Role, work and stack layouts widen."
+      },
+      {
+        "name": "container-outcomes-stack",
+        "value": "@container (max-width: 30rem)",
+        "purpose": "Outcome rows stack."
+      },
+      {
+        "name": "container-profile-top",
+        "value": "@container (min-width: 22rem)",
+        "purpose": "Headshot, status pill and theme switch share one row."
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The email action; the brightest object on the panel. Green fill, canvas text, inline SVG icon.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\"><svg viewBox=\"0 0 512 512\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z\"/></svg>Email me</a>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 0.625rem; min-height: 2.75rem; padding: 0.75rem 1.375rem; border-radius: 10px; background: var(--color-signal, #39e07a); color: var(--color-canvas, #0b0d0e); font-family: var(--font-body, 'Instrument Sans', 'Segoe UI', Arial, sans-serif); font-weight: 700; text-decoration: none; transition: background-color 150ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-primary:hover { background: var(--color-signal-hover, #5ef08f); } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-signal, #39e07a); outline-offset: 3px; }"
+    },
+    {
+      "name": "Round Control",
+      "kind": "button",
+      "refersTo": "button-round",
+      "description": "44px circle used for carousel arrows and the theme switch; border and icon turn green on hover.",
+      "html": "<button class=\"ds-btn-round\" type=\"button\" aria-label=\"Next testimonial\"><svg viewBox=\"0 0 320 512\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z\"/></svg></button>",
+      "css": ".ds-btn-round { display: inline-flex; align-items: center; justify-content: center; width: 2.75rem; height: 2.75rem; border: 1px solid var(--color-rule-strong, #3a4146); border-radius: 50%; background: var(--color-card, #15191b); color: var(--color-fg, #f2f2ee); cursor: pointer; transition: border-color 150ms cubic-bezier(0.16, 1, 0.3, 1), color 150ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-round:hover { border-color: var(--color-signal, #39e07a); color: var(--color-signal, #39e07a); } .ds-btn-round:focus-visible { outline: 2px solid var(--color-signal, #39e07a); outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Link",
+      "kind": "custom",
+      "refersTo": "text-link",
+      "description": "Off-white semibold link with a strong-rule underline; turns green on hover.",
+      "html": "<a class=\"ds-text-link\" href=\"#\">LinkedIn</a>",
+      "css": ".ds-text-link { display: inline-flex; align-items: center; min-height: 2.75rem; color: var(--color-fg, #f2f2ee); font-family: var(--font-body, 'Instrument Sans', 'Segoe UI', Arial, sans-serif); font-weight: 600; text-decoration: underline; text-decoration-color: var(--color-rule-strong, #3a4146); text-decoration-thickness: 1px; text-underline-offset: 4px; transition: color 150ms cubic-bezier(0.16, 1, 0.3, 1), text-decoration-color 150ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-text-link:hover { color: var(--color-signal, #39e07a); text-decoration-color: currentColor; } .ds-text-link:focus-visible { outline: 2px solid var(--color-signal, #39e07a); outline-offset: 3px; border-radius: 4px; }"
+    },
+    {
+      "name": "Pills, Chips and Tags",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Status pill (green dot), neutral stack chip, amber date chip, green type tag and inline metric.",
+      "html": "<div class=\"ds-chips\"><span class=\"ds-status-pill\">Available for opportunities</span><span class=\"ds-chip\">Laravel</span><span class=\"ds-date-chip\">Oct 2024 &ndash; Mar 2025</span><span class=\"ds-tag\">Fresh-food marketplace</span><span class=\"ds-body\">improving reliability by <mark class=\"ds-metric\">80%</mark></span></div>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; padding: 1rem; background: var(--color-canvas, #0b0d0e); font-family: var(--font-body, 'Instrument Sans', 'Segoe UI', Arial, sans-serif); } .ds-status-pill { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.375rem 0.75rem; border-radius: 999px; background: var(--color-signal-tint, rgb(57 224 122 / 0.14)); color: var(--color-signal-soft, #8ff0b4); font-size: 0.875rem; font-weight: 600; } .ds-status-pill::before { content: \"\"; width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--color-signal, #39e07a); } .ds-chip { display: inline-flex; padding: 0.25rem 0.75rem; border: 1px solid var(--color-rule, #2a2f33); border-radius: 999px; background: var(--color-raised, #1b2023); color: var(--color-chip-fg, #d6dbde); font-size: 0.875rem; font-weight: 600; } .ds-date-chip { padding: 0.3125rem 0.75rem; border-radius: 999px; background: var(--color-amber-tint, rgb(242 163 58 / 0.16)); color: var(--color-amber-soft, #f7c27a); font-size: 0.8125rem; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; } .ds-tag { display: inline-flex; padding: 0.125rem 0.625rem; border-radius: 999px; background: var(--color-signal-tint, rgb(57 224 122 / 0.14)); color: var(--color-signal-soft, #8ff0b4); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.02em; } .ds-body { color: var(--color-body, #b9c0c4); } .ds-metric { padding: 0.0625rem 0.375rem; border-radius: 6px; background: var(--color-signal-tint, rgb(57 224 122 / 0.14)); color: var(--color-signal-soft, #8ff0b4); font-weight: 700; }"
+    },
+    {
+      "name": "Section Index",
+      "kind": "nav",
+      "refersTo": "section-index-link",
+      "description": "Signature interaction: uppercase tracked labels with a half-length rule; the section in view turns green and its rule extends.",
+      "html": "<nav class=\"ds-index\" aria-label=\"Sections\"><a href=\"#\" aria-current=\"true\">Outcomes</a><a href=\"#\">Experience</a><a href=\"#\">About</a><a href=\"#\">Work</a></nav>",
+      "css": ".ds-index { display: flex; flex-direction: column; padding: 1.5rem; background: var(--color-panel, #121517); font-family: var(--font-body, 'Instrument Sans', 'Segoe UI', Arial, sans-serif); } .ds-index a { display: flex; align-items: center; gap: 1rem; padding-block: 0.5rem; color: var(--color-muted, #8b9398); font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; transition: color 150ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-index a::before { content: \"\"; width: 4rem; height: 2px; background: currentColor; opacity: 0.5; transform: scaleX(0.5); transform-origin: left center; transition: transform 250ms cubic-bezier(0.16, 1, 0.3, 1), opacity 250ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-index a:hover { color: var(--color-fg, #f2f2ee); } .ds-index a[aria-current=\"true\"] { color: var(--color-signal, #39e07a); } .ds-index a:hover::before, .ds-index a[aria-current=\"true\"]::before { opacity: 1; transform: none; } .ds-index a:focus-visible { outline: 2px solid var(--color-signal, #39e07a); outline-offset: 3px; border-radius: 4px; }"
+    },
+    {
+      "name": "Section Heading",
+      "kind": "custom",
+      "refersTo": "typography.headline",
+      "description": "Display-face heading led by a short green rule that echoes the section index.",
+      "html": "<h2 class=\"ds-section-label\">Selected outcomes</h2>",
+      "css": ".ds-section-label { margin: 0; color: var(--color-fg, #f2f2ee); font-family: var(--font-display, 'Montserrat Alternates', 'Segoe UI', Arial, sans-serif); font-size: 1.75rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.01em; } .ds-section-label::before { content: \"\"; display: inline-block; width: 1.5rem; height: 2px; margin-right: 0.875rem; vertical-align: 0.3em; background: var(--color-signal, #39e07a); }"
+    },
+    {
+      "name": "Outcomes List",
+      "kind": "custom",
+      "refersTo": "typography.figure",
+      "description": "Ruled rows of display-face figures; colour carries meaning (green, amber, off-white). Stacks below 30rem of container.",
+      "html": "<ul class=\"ds-outcomes\"><li class=\"ds-outcome\"><span class=\"ds-figure ds-fig-signal\">99.99%</span><p><strong>Uptime</strong> on highly available cloud infrastructure.</p></li><li class=\"ds-outcome\"><span class=\"ds-figure ds-fig-amber\">&minus;50%</span><p><strong>Monthly server costs</strong>, reduced on RAIN Project.</p></li><li class=\"ds-outcome\"><span class=\"ds-figure\">+15%</span><p><strong>Driver utilization</strong> at Yassir.</p></li></ul>",
+      "css": ".ds-outcomes { container-type: inline-size; margin: 0; padding: 0; list-style: none; font-family: var(--font-body, 'Instrument Sans', 'Segoe UI', Arial, sans-serif); } .ds-outcome { display: grid; grid-template-columns: 10rem minmax(0, 1fr); gap: 1.5rem; align-items: baseline; padding: 1.125rem 0; border-top: 1px solid var(--color-rule, #2a2f33); } .ds-outcome:last-child { border-bottom: 1px solid var(--color-rule, #2a2f33); } .ds-outcome p { margin: 0; color: var(--color-body, #b9c0c4); font-size: 1.0625rem; line-height: 1.625; } .ds-outcome strong { color: var(--color-fg, #f2f2ee); font-weight: 600; } .ds-figure { color: var(--color-fg, #f2f2ee); font-family: var(--font-display, 'Montserrat Alternates', 'Segoe UI', Arial, sans-serif); font-size: min(2.5rem, 15cqi); font-weight: 700; line-height: 1; white-space: nowrap; } .ds-fig-signal { color: var(--color-signal, #39e07a); } .ds-fig-amber { color: var(--color-amber, #f2a33a); } @container (max-width: 30rem) { .ds-outcome { grid-template-columns: minmax(0, 1fr); gap: 0.5rem; } }"
+    },
+    {
+      "name": "Role Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Experience card: icon tile, title, company line, amber date chip, green square bullets and highlighted metrics.",
+      "html": "<article class=\"ds-role\"><div class=\"ds-role-head\"><span class=\"ds-role-tile\" aria-hidden=\"true\"><svg viewBox=\"0 0 640 512\" width=\"20\" height=\"20\"><path fill=\"currentColor\" d=\"M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z\"/></svg></span><div class=\"ds-role-title\"><h3>Senior Backend Engineer</h3><p>Yassir &middot; Palo Alto, California, USA</p></div><p class=\"ds-role-date\">Oct 2024 &ndash; Mar 2025</p></div><ul class=\"ds-role-points\"><li>Built an internal logging system, improving debugging reliability by <mark>80%</mark></li><li>Increased driver utilization by <mark>15%</mark></li></ul></article>",
+      "css": ".ds-role { container-type: inline-size; padding: 1.5rem; border-radius: 16px; background: var(--color-card, #15191b); box-shadow: 0 0 0 1px var(--color-rule, #2a2f33); font-family: var(--font-body, 'Instrument Sans', 'Segoe UI', Arial, sans-serif); } .ds-role-head { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1rem; } .ds-role-tile { display: grid; place-items: center; width: 3rem; height: 3rem; flex-shrink: 0; border-radius: 14px; background: var(--color-signal-tint, rgb(57 224 122 / 0.14)); color: var(--color-signal, #39e07a); } .ds-role-title { flex: 1 1 14rem; min-width: 0; } .ds-role-title h3 { margin: 0; color: var(--color-fg, #f2f2ee); font-family: var(--font-display, 'Montserrat Alternates', 'Segoe UI', Arial, sans-serif); font-size: 1.25rem; font-weight: 700; line-height: 1.4; } .ds-role-title p { margin: 0.125rem 0 0; color: var(--color-muted, #8b9398); font-size: 0.875rem; } .ds-role-date { margin: 0 0 0 auto; align-self: flex-start; padding: 0.3125rem 0.75rem; border-radius: 999px; background: var(--color-amber-tint, rgb(242 163 58 / 0.16)); color: var(--color-amber-soft, #f7c27a); font-size: 0.8125rem; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; } .ds-role-points { display: grid; gap: 0.5rem; margin: 1.25rem 0 0 4rem; padding: 0; list-style: none; color: var(--color-body, #b9c0c4); line-height: 1.6; } .ds-role-points li { position: relative; padding-left: 1.25rem; } .ds-role-points li::before { content: \"\"; position: absolute; left: 0; top: 0.62em; width: 0.4375rem; height: 0.4375rem; border-radius: 2px; background: var(--color-signal, #39e07a); } .ds-role-points mark { padding: 0.0625rem 0.375rem; border-radius: 6px; background: var(--color-signal-tint, rgb(57 224 122 / 0.14)); color: var(--color-signal-soft, #8ff0b4); font-weight: 700; box-decoration-break: clone; -webkit-box-decoration-break: clone; }"
+    },
+    {
+      "name": "Work Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Linked project card; hover strengthens the edge, lifts a soft shadow, turns the title green and pans the screenshot.",
+      "html": "<a class=\"ds-work\" href=\"#\"><div class=\"ds-work-shot\" role=\"img\" aria-label=\"Project screenshot\"></div><div class=\"ds-work-body\"><h3>Scandium</h3><p>A no-code test automation tool that helps businesses create and maintain automated test cases.</p><div class=\"ds-work-foot\"><span class=\"ds-work-domain\">getscandium.com</span><span class=\"ds-work-tag\">Test automation</span></div></div></a>",
+      "css": ".ds-work { display: grid; grid-template-columns: 13rem minmax(0, 1fr); overflow: hidden; border-radius: 16px; background: var(--color-card, #15191b); box-shadow: 0 0 0 1px var(--color-rule, #2a2f33); color: inherit; font-family: var(--font-body, 'Instrument Sans', 'Segoe UI', Arial, sans-serif); text-decoration: none; transition: box-shadow 250ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-work:hover { box-shadow: var(--shadow-card-hover, 0 0 0 1px #3a4146, 0 18px 40px rgb(0 0 0 / 0.45)); } .ds-work:focus-visible { outline: 2px solid var(--color-signal, #39e07a); outline-offset: 3px; } .ds-work-shot { position: relative; overflow: hidden; min-height: 11rem; background: var(--color-raised, #1b2023); } .ds-work-shot::after { content: \"\"; position: absolute; top: 1rem; bottom: 1rem; left: 1rem; width: 45%; border-radius: 6px; background: var(--color-rule, #2a2f33); transition: transform 2400ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-work:hover .ds-work-shot::after { transform: translateX(100%); } .ds-work-body { padding: 1.5rem; } .ds-work-body h3 { margin: 0; color: var(--color-fg, #f2f2ee); font-family: var(--font-display, 'Montserrat Alternates', 'Segoe UI', Arial, sans-serif); font-size: 1.125rem; font-weight: 700; transition: color 150ms; } .ds-work:hover h3 { color: var(--color-signal, #39e07a); } .ds-work-body p { margin: 0.5rem 0 0; color: var(--color-body, #b9c0c4); line-height: 1.625; } .ds-work-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; margin-top: 1rem; } .ds-work-domain { color: var(--color-signal-soft, #8ff0b4); font-size: 0.875rem; font-weight: 600; } .ds-work-tag { padding: 0.125rem 0.625rem; border-radius: 999px; background: var(--color-signal-tint, rgb(57 224 122 / 0.14)); color: var(--color-signal-soft, #8ff0b4); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.02em; } @media (prefers-reduced-motion: reduce) { .ds-work, .ds-work-shot::after { transition: none; } }"
+    },
+    {
+      "name": "Gauge Card (Testimonial)",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Matte card with the faint gauge ring and amber quote mark; the ring also appears on the profile panel and contact card.",
+      "html": "<figure class=\"ds-gauge\"><svg class=\"ds-quote\" viewBox=\"0 0 448 512\" width=\"28\" height=\"28\" aria-hidden=\"true\"><path fill=\"currentColor\" d=\"M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V216z\"/></svg><blockquote>Ezekiel is an excellent software engineer, with solid hands-on skills and a calm way of leading.</blockquote><figcaption><strong>Israel Adura</strong><span>Systems Engineer | Cloudflare</span></figcaption></figure>",
+      "css": ".ds-gauge { position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 1.25rem; margin: 0; padding: 2rem; border-radius: 16px; background: var(--color-card, #15191b); box-shadow: 0 0 0 1px var(--color-rule, #2a2f33); font-family: var(--font-body, 'Instrument Sans', 'Segoe UI', Arial, sans-serif); } .ds-gauge > * { position: relative; z-index: 1; } .ds-gauge::after { content: \"\"; position: absolute; right: -6rem; bottom: -6rem; width: 20rem; height: 20rem; border: 1px solid var(--color-ring, rgb(57 224 122 / 0.18)); border-radius: 50%; box-shadow: 0 0 0 2.5rem var(--color-ring-fill, rgb(57 224 122 / 0.03)), inset 0 0 0 2.5rem var(--color-ring-fill, rgb(57 224 122 / 0.03)); pointer-events: none; } .ds-quote { color: var(--color-amber, #f2a33a); } .ds-gauge blockquote { margin: 0; color: var(--color-body, #b9c0c4); font-size: 1.0625rem; line-height: 1.65; } .ds-gauge figcaption { display: flex; flex-direction: column; } .ds-gauge figcaption strong { color: var(--color-fg, #f2f2ee); font-family: var(--font-display, 'Montserrat Alternates', 'Segoe UI', Arial, sans-serif); } .ds-gauge figcaption span { color: var(--color-muted, #8b9398); font-size: 0.875rem; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Night Flight on the Split Stage",
+    "overview": "The page is a cockpit at night, split in two. On the left, the person sits on a matte instrument panel pinned in place: headshot, availability, name, a one-line claim, a short pitch, a section index, and the email action. On the right, the proof scrolls past: outcomes first, then roles, about and stack, shipped work, testimonials, contact. Outcomes come before adjectives; the numbers are set in the display face so they read as headlines, not footnotes.\n\nThe scene is a near-black ground with matte, slightly lifted panels and cards edged by a single 1px rule. Two lamps light it. Luminous green is the signal: status, the tagline, the section in view, highlighted metrics, links on hover and the primary action. Amber is the second lamp, rationed to dates, one outcome figure and the testimonial quote marks. Headings are warm off-white; everything read sits in a softer grey. Faint concentric gauge rings are the only ornament. Density is moderate: generous section spacing, short measures, nothing decorative that does not carry information.\n\nThe same instruments ship in daylight as Day Flight, a composed light theme selected by a switch in the profile panel; Night Flight is the default. This is the category-standard two-column developer portfolio, executed carefully rather than reinvented, and it deliberately refuses a full-width hero banner over a grid of skill cards.",
+    "keyCharacteristics": [
+      "Two columns on desktop: a sticky, rounded profile panel (5fr) beside a scrolling proof column (7fr).",
+      "Dark by default; a persisted light/dark switch remaps every colour token, never individual components.",
+      "Green signal plus an amber second lamp on a matte near-black ground; no other hues.",
+      "Montserrat Alternates for the name, figures, section headings and card titles; Instrument Sans for everything read.",
+      "Surfaces separate by tone and a 1px rule, not by shadow; faint gauge rings are the only ornament.",
+      "Components in the proof column lay out by container width, not viewport.",
+      "The scroll-tracking section index is the signature interaction."
+    ],
+    "rules": [
+      {
+        "name": "The Two Lamps Rule",
+        "body": "Green is the signal and amber is the second lamp; there is no third hue. Green marks identity, state, status and the primary action. Amber is rationed to dates, one outcome figure and quote marks. If a new element wants colour, it is one of those, or it is a neutral.",
+        "section": "colors"
+      },
+      {
+        "name": "The Soft-On-Tint Rule",
+        "body": "Text set on a green or amber tint uses the soft form of that colour (signal-soft, amber-soft), never the full-strength lamp.",
+        "section": "colors"
+      },
+      {
+        "name": "The Remap-Not-Restyle Rule",
+        "body": "Themes change token values, never component rules. A component that hardcodes a hex breaks Day Flight.",
+        "section": "colors"
+      },
+      {
+        "name": "The Figures-As-Headlines Rule",
+        "body": "Quantified outcomes are set in the display face at headline weight with proportional numerals; the explanation beside them is body text with a semibold off-white lead-in.",
+        "section": "typography"
+      },
+      {
+        "name": "The 65ch Rule",
+        "body": "No paragraph or bullet list runs wider than 65ch, whatever the column width.",
+        "section": "typography"
+      },
+      {
+        "name": "The Matte Instrument Rule",
+        "body": "Surfaces are matte at rest: tone and a 1px edge separate them. A lifting shadow appears only when a linked card is hovered.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Rules-Or-Cards Rule",
+        "body": "Rows of comparable facts (outcomes, stack) sit on 1px rules on the ground. Self-contained objects (a role, a project, a testimonial, the contact card) sit on matte cards. Never both on the same content.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Gauge Ring Rule",
+        "body": "Gauge rings are the only ornament and appear on exactly three surfaces: the profile panel, testimonial cards and the contact card. Role and work cards stay plain.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do read every colour through the CSS variables so Night Flight and Day Flight both hold; add a new colour to both theme blocks or not at all.",
+      "Do keep green to identity, state, status, metrics and the primary action, and amber to dates, the −50% figure and quote marks.",
+      "Do set text on a tint in that colour's soft form (signal-soft, amber-soft).",
+      "Do set quantified results in Montserrat Alternates with proportional numerals, and dates in tabular numerals kept on one line.",
+      "Do cap running text at 65ch.",
+      "Do give every interactive target at least 44px and show the 2px green focus ring at 3px offset.",
+      "Do lay out components inside the proof column with container queries so they respond to the column, not the viewport.",
+      "Do separate surfaces with tone and a 1px edge ring; reserve the lifting shadow for hovered linked cards.",
+      "Do honour reduced motion: no smooth scroll, no transitions, no hover pan, no carousel autoplay."
+    ],
+    "donts": [
+      "Don't put a full-width hero banner above the content or turn skills into a grid of cards; the profile panel and ruled lists carry that job.",
+      "Don't introduce a third hue or gradients.",
+      "Don't add resting drop shadows or hard, offset shadows; depth is tonal.",
+      "Don't add ornament beyond the gauge rings, or put rings on role and work cards.",
+      "Don't invert the dark theme to make the light one; Day Flight deepens green and amber for contrast on a pale ground.",
+      "Don't use Montserrat Alternates for running text, or Instrument Sans for the name and figures.",
+      "Don't use icon fonts; icons are inline SVG symbols sized 12px to 28px."
+    ]
+  }
+}

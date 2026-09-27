@@ -1,1 +1,8 @@
 .DS_Store
+node_modules/
+.impeccable/*.cache.json
+.impeccable/config.local.json
+# Impeccable session artifacts (screenshots, mock-ups, decision-page logs)
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/questions/
